@@ -57,6 +57,7 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
+```
 
 ### 2. Predicción de Condiciones Cardíacas con Regresión Logística
 
@@ -86,7 +87,7 @@ accuracy = accuracy_score(y_test, y_pred)
 precision = precision_score(y_test, y_pred)
 recall = recall_score(y_test, y_pred)
 
-
+```
 
 ### 3. Clasificación de la Calidad del Vino con Árbol de Decisión
 
@@ -121,8 +122,8 @@ plt.figure(figsize=(20,10))
 plot_tree(model, filled=True, feature_names=X.columns)
 plt.title("Árbol de Decisión para Clasificación de Calidad de Vinos")
 plt.show()
-
-## Consideraciones y Conclusiones Generales
+```
+#Consideraciones y Conclusiones Generales
 
 - **Sujeto a Mejoras**: Todos los modelos desarrollados en este proyecto están sujetos a mejoras. Es fundamental explorar nuevas características y realizar un ajuste continuo de los hiperparámetros para optimizar el rendimiento.
 
